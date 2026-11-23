@@ -11,8 +11,8 @@ What is new in 4.4 (23 Nov 2026)
 - Lever sizes and totals unchanged from 4.3.
 
 Password (Comvest edition only)
-- The site asks for a password before anything loads: any username, password **Ojos2026**. It is enforced on Vercel's servers by `middleware.js` (Vercel Routing Middleware, Basic Auth), so the page is never sent without it. `package.json` only marks the folder as an ES module; there is nothing to install.
-- Deploy the whole folder (Vercel CLI `vercel --prod` from inside it, or a Git import). Framework preset: Other. After deploying, open the link in a private window: the browser should ask for the password.
+- Before anything loads, the site shows a CreditSwan page with a single password box (no username). Password: **Ojos2026**. A correct password sets a cookie for 7 days, so the reader is not asked again on that browser. It is enforced on Vercel's servers by `middleware.js` (Vercel Routing Middleware), so the packet is never sent without it. `package.json` only marks the folder as an ES module; there is nothing to install.
+- Deploy the whole folder (Vercel CLI `vercel --prod` from inside it, or a Git import). Framework preset: Other. After deploying, open the link in a private window: the password page should appear.
 - To change the password, edit `PASSWORD` in `middleware.js` and redeploy.
 
 How to find things
